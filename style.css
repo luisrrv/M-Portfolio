@@ -1,6 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(228, 228, 228);
+  color: rgb(20, 20, 20);
+  /* font-family: "Poiret One", cursive; */
+  /* font-family: 'Bonny', serif; */
+  font-family: 'Chillax', sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
 }
 .containers {
   /* background-color: black; */
@@ -8,11 +22,60 @@ body {
   padding: 16px 40px;
 }
 .banner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  /* font-family: 'Bonny', serif; */
+  font-family: 'Water Brush', cursive;
+  margin: 0;
+  color: rgb(53, 53, 53);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 80px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+.title {
   text-align: center;
-  padding: 16px;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  margin-bottom: 40px;
+}
+.social {
+  color: rgb(52, 52, 52);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+}
+.content {
+  border-radius: 16px;
 }
 .intro {
   padding: 8px;
+}
+.location {
+  text-align: center;
+  font-weight: 300;
+}
+.sizes {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
 }
 .pics {
   max-width: 100%;
@@ -27,6 +90,7 @@ body {
   width: 100%;
   /* height: 100%; */
   object-fit: cover;
+  border-radius: 2px;
 }
 .one {
   grid-column-start: 1;
