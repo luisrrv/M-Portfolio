@@ -33,6 +33,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 .nav-socials {
   display: flex;
@@ -108,8 +109,8 @@ section::after {
   text-align: center;
   white-space: nowrap;
 } */
-#section07 {
-  /* background: url(https://picsum.photos/1200/800?image=675) center center / cover no-repeat; */
+/* #section07 {
+  background: url(https://picsum.photos/1200/800?image=675) center center / cover no-repeat;
   position: absolute;
   bottom: 72px;
   left: 50%;
@@ -172,7 +173,7 @@ section::after {
 }
 .demo a:hover {
   opacity: .5;
-}
+} */
 .content {
   border-radius: 16px;
 }
@@ -198,6 +199,7 @@ section::after {
 .gallery-title {
   font-weight: 300;
   padding: 28px 0;
+  text-align: center;
 }
 .pics {
   max-width: 100%;
@@ -213,6 +215,7 @@ section::after {
   /* height: 100%; */
   /* object-fit: cover; */
   border-radius: 2px;
+  cursor: pointer;
 }
 /* .one {
   grid-column-start: 1;
@@ -252,4 +255,31 @@ section::after {
 } */
 .footer {
   text-align: center;
+}
+
+#fullpage {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .banner h1 {
+    font-size: 88px;
+  }
+  .pics {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }

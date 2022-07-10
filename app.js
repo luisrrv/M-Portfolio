@@ -15,3 +15,15 @@ window.onscroll = function() {
     // document.getElementById("navbar").style.pointerEvents querySellocation
   }
 };
+
+// Fullscreen pictures
+const getPics = () => {}
+const imgs = document.querySelectorAll(".pic");
+const fullPage = document.querySelector("#fullpage");
+
+  imgs.forEach(img => {
+    img.addEventListener('click', () => {
+      fullPage.style.backgroundImage = `url(${img.src})`;
+      fullPage.style.display = 'block';
+    });
+  });
